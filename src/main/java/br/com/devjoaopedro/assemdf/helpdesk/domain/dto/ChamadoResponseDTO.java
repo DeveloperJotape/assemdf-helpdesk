@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ChamadoDTO {
+public class ChamadoResponseDTO {
     private Long id;
     private String titulo;
     private String descricao;
@@ -22,9 +22,9 @@ public class ChamadoDTO {
     private LocalDateTime dataAtualizacao;
     private LocalDateTime dataFechamento;
 
-    private UsuarioDTO cliente;
-    private UsuarioDTO responsavel;
+    private UsuarioResponseDTO cliente;
+    private UsuarioResponseDTO responsavel;
 
-    private List<ComentarioDTO> comentarios;
+    private List<ComentarioResponseDTO> comentarios;
     private List<AnexoDTO> anexos;
 }
